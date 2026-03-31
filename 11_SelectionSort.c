@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 
-void selectionSort(int arr[], int n) {
-    int i, j, minIndex, temp;
+void selectionSort(int arr[]) {
+    int i, j, minIndex, temp, n = sizeof(arr) / sizeof(arr[0]);
 
     for (i = 0; i < n - 1; i++) {
         // Assume the current index is the minimum
@@ -34,7 +34,7 @@ int main() {
         printf("%d ", arr[i]);
     printf("\n");
 
-    selectionSort(arr, n);
+    selectionSort(arr);
 
     printf("The array after the selection sort is :\n ");
     for (i = 0; i < n; i++)
